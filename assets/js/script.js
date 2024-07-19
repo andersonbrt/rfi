@@ -43,6 +43,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (vilao.id === "ignorar") {
 
+                if (posicao) {
+                    // Seleciona o input e o label que queremos ocultar
+                    var bbInput = document.getElementById('vhj');
+                    var bbLabel = document.querySelector('label[for="vhj"]');
+                    mostrar(bbInput, bbLabel);
+
+                    // Seleciona o input e o label que queremos ocultar
+                    var bbInput = document.getElementById('vmp');
+                    var bbLabel = document.querySelector('label[for="vmp"]');
+                    mostrar(bbInput, bbLabel);
+
+                    // Seleciona o input e o label que queremos ocultar
+                    var bbInput = document.getElementById('vco');
+                    var bbLabel = document.querySelector('label[for="vco"]');
+                    mostrar(bbInput, bbLabel);
+
+                    // Seleciona o input e o label que queremos mostrar
+                    var bbInput = document.getElementById('ep2');
+                    var bbLabel = document.querySelector('label[for="ep2"]');
+                    mostrar(bbInput, bbLabel);
+
+                    // Seleciona o input e o label que queremos mostrar
+                    var bbInput = document.getElementById('lj');
+                    var bbLabel = document.querySelector('label[for="lj"]');
+                    mostrar(bbInput, bbLabel);
+                }
+
+
                 // Percorrer array de campos para mostrar
                 valoresOcultar.forEach(function (blind) {
 
